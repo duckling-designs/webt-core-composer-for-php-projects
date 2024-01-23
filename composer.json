@@ -1,0 +1,12 @@
+{
+    "name": "duckling-designs/webt-core-composer-for-php-projects",
+    "type": "project",
+    "require": {
+        "endroid/qr-code": "^5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "DucklingDesigns\\WebtCoreComposerForPhpProjects\\": "src/"
+        }
+    }
+}
