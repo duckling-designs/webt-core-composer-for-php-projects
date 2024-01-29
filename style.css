@@ -1,0 +1,48 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: #ccfbed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  color: #0d947c;
+}
+
+.qrcode {
+  background-color: #5eeac8;
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+button,
+input {
+  font-family: inherit;
+  border-radius: 10px;
+  border: 2px solid #134e45;
+  margin: 20px;
+}
+
+button {
+  cursor: pointer;
+  background-color: #16d0ab;
+  color: black;
+  height: 80px;
+  width: 160px;
+  font-size: 16px;
+}
+
+input {
+  height: 75px;
+  width: 160px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
