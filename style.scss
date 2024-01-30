@@ -18,14 +18,19 @@ $primary-color: $caribbean-green-600;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 // Styles
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
   background-color: $caribbean-green-100;
+
+}
+
+.mainContainer {
   @include flex-center;
-  text-align: center;
 }
 
 .title {
@@ -38,7 +43,6 @@ body {
   font-size: 18px;
   padding: 20px;
   @include flex-center;
-  flex-direction: column;
 }
 
 button,
@@ -62,4 +66,33 @@ input {
   height: 75px;
   width: 160px;
   text-align: center;
+}
+
+// Responsive Styles for Phones
+@media (max-width: 428px) {
+  .title {
+    font-size: 24px;
+  }
+
+  .qrcode {
+    font-size: 18px;
+    width: 80vw;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .qrcode img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  button,
+  input {
+    width: 90vw;
+    max-width: 100%;
+    height: 60px;
+  }
+  input {
+    margin-bottom: 0;
+  }
 }

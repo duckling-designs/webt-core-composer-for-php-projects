@@ -44,7 +44,7 @@ $htmlStart = <<<HTML
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap')
 </style>
 <body>
-<main>
+<div class="mainContainer">
 <h1 class="title">Generate a QR-Code!</h1>
 <form class="inputForm" method="post">
     <input type="tel" name="inputValue" id="inputField" placeholder="text to generate" pattern="[+]?[0-9 ]+">
@@ -70,7 +70,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["inputValue"])) {
 }
 
 $htmlEnd = <<<HTML
-</main>
+</div>
 </body>
 <script>
 document.addEventListener("DOMContentLoaded", function() {
