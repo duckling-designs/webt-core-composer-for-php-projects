@@ -47,8 +47,8 @@ $htmlStart = <<<HTML
 <main>
 <h1 class="title">Generate a QR-Code!</h1>
 <form class="inputForm" method="post">
-<input type="text" name="inputValue" id="inputField" placeholder="text to generate">
-<button type="submit" id="submitButton">generate</button>
+    <input type="tel" name="inputValue" id="inputField" placeholder="text to generate" pattern="[+]?[0-9 ]+">
+    <button type="submit" id="submitButton">generate</button>
 </form>
 HTML;
 
